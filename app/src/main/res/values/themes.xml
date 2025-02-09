@@ -1,7 +1,11 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.UXAssignment2" parent="Theme.Material3.DayNight.NoActionBar">
+    <style
+        name="Base.Theme.UXAssignment2"
+        parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
+<!--        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body1</item>-->
+<!--        <item name="textAppearanceButton">@style/TextAppearance.Material.Button</item>-->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
