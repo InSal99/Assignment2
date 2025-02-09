@@ -1,0 +1,17 @@
+<!--<shape xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:shape="oval">-->
+<!--    <size android:width="8dp" android:height="8dp"/>-->
+<!--    <solid android:color="@android:color/darker_gray"/>-->
+<!--</shape>-->
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape
+            android:innerRadius="0dp"
+            android:shape="ring"
+            android:thickness="4dp"
+            android:useLevel="false">
+            <solid android:color="@android:color/darker_gray" />
+        </shape>
+    </item>
+</layer-list>
