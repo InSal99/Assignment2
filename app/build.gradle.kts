@@ -52,4 +52,7 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
     implementation ("com.google.android.material:material:1.7.0")
     implementation("androidx.viewpager2:viewpager2:1.0.0")
+    implementation ("com.github.bumptech.glide:glide:4.15.1") // Use the latest version
+    annotationProcessor ("com.github.bumptech.glide:compiler:4.15.1") // For Glide annotations
+
 }
