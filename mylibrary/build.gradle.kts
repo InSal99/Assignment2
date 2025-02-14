@@ -1,20 +1,17 @@
 plugins {
-    alias(libs.plugins.android.application)
+    alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
 }
 
 android {
-    namespace = "com.example.uxassignment2"
+    namespace = "com.example.mylibrary"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.uxassignment2"
         minSdk = 34
-        targetSdk = 35
-        versionCode = 1
-        versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles("consumer-rules.pro")
     }
 
     buildTypes {
@@ -33,11 +30,6 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
-
-
-    buildFeatures {
-        viewBinding = true
-    }
 }
 
 dependencies {
@@ -45,15 +37,7 @@ dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
-    implementation(libs.androidx.activity)
-    implementation(libs.androidx.constraintlayout)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-    implementation ("com.google.android.material:material:1.7.0")
-    implementation("androidx.viewpager2:viewpager2:1.0.0")
-    implementation ("com.github.bumptech.glide:glide:4.15.1") // Use the latest version
-    annotationProcessor ("com.github.bumptech.glide:compiler:4.15.1") // For Glide annotations
-
-    implementation(project(":mylibrary"))
 }

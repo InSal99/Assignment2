@@ -21,4 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "UX Assignment 2"
 include(":app")
- 
+include(":mylibrary")
